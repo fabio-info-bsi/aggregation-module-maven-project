@@ -7,10 +7,10 @@ O intuito deste exemplo é para mostrar como é possível modularizar projetos m
 Principais características: 
 - Projeto root(aggregation-module-maven-project) 
   - É um packaging: `<packaging>pom</packaging>`
-  - Herda spring boot, consequentemente todos que herdarenm com `<parent>` também terão as depenências do Srping
-  - Todos as dependências deste projetos serão herdadas pelos modulos internos.
-  - Utilização de `<modules>`, mapeando seus respectivos modulos internos.
-- Modulos internos são packaging: `<packaging>jar</packaging>`
+  - Herda spring boot, consequentemente todos que herdarem com `<parent>` também terão as dependências do Spring
+  - Todos as dependências deste projetos serão herdadas pelos módulos internos.
+  - Utilização de `<modules>`, mapeando seus respectivos módulos internos.
+- Módulos internos são: `<packaging>jar</packaging>`
   - `GroupId` padronizado: `br.com.fabe.learn`, podendo ter seus subdomínios em cada módulo interno.
   - Herdam do projeto root através do `<parent>`.
 
